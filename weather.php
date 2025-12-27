@@ -2,10 +2,10 @@
 
 header('Content-Type: text/html; charset=UTF-8');
 
-$API_KEY = "8f3e9794e185f7a3779ac35d4afcb9e5";
-$city = "Retiro,CL";
+$API_KEY = "";
+$city = "";
 
-$url = "https://api.openweathermap.org/data/2.5/weather?q=$city&units=metric&lang=es&appid=$API_KEY";
+$url = "";
 
 /* cURL */
 $ch = curl_init();
@@ -26,3 +26,4 @@ curl_close($ch);
 header("Content-Type: application/json");
 echo $response;
 ?>
+
