@@ -3,7 +3,7 @@
 
 header('Content-Type: text/html; charset=UTF-8');
 
-$API_KEY = "a0eb4bf017014d18b2791a08ca616dec";
+$API_KEY = "";
 $url = "https://newsapi.org/v2/top-headlines?sources=bbc-mundo,cnn-es,el-mundo,la-nacion&pageSize=5&apiKey=$API_KEY";
 
 
@@ -32,3 +32,4 @@ curl_close($ch);
 header("Content-Type: application/json");
 echo $response;
 ?>
+
